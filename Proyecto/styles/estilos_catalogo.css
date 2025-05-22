@@ -1,17 +1,49 @@
 body{
+    background-color: black;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
-}
-header{
-    background: black;
     color: white;
-    padding: 10px 20px;
 }
+
+header{
+    height: 10%;
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+}
+img{
+    height: 70px;
+    width: 200px;
+    padding-left: 0px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    margin-left: 55%;
+    
+}
+
+.menu li{
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+a{
+    text-decoration: none;
+}
+.menu li:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
 .titulo{
     text-align: center;
     font: 48px;
     margin-top: 30px;
+
 }
 .categorias{
     text-align: center;
@@ -20,7 +52,7 @@ header{
 .categorias a{
     margin: 0 15px;
     font-weight: bold;
-    color: black;
+    color: white;
     transition: color 0.5s ease;
 }
 .categorias a:hover{
@@ -38,6 +70,7 @@ header{
     padding: 10px;
     background-color: white;
     border-right: 1px solid black;
+    color: black;
 }
 .filtros h3{
     margin-top: 0;
