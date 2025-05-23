@@ -1,43 +1,65 @@
-body{
-    background-color: black;
+*{
+    padding: 0;
     margin: 0;
-    color: white;
+    box-sizing: border-box;
 }
 
-header{
-    height: 10%;
+body{
+    background-color: #fff;
+}
+
+/*----------NAVBAR STYLES-----------*/
+
+.navbar{
+    background-color: #000;
     width: 100%;
-    padding-top: 0;
     display: flex;
-}
-img{
-    height: 70px;
-    width: 200px;
-    padding-left: 0px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.menu{
+.nav__list{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.list__item{
     list-style: none;
-    display: flex;
-    margin-left: 58%;
-    
+    transition: transform 0.3s;
 }
 
-.menu li{
-    color: white;
-    padding-left: 30px;
-    font-size: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-a{
-    text-decoration: none;
-}
-.menu li:hover{
-    color: red;
+.list__item:hover{
     transform: scale(1.2);
 }
+
+.link__item{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.link__item:hover{
+    color: #DC143C;
+}
+
+.item__login{
+    background-color: #DC143C;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.item__login:hover{
+    background-color: #fff;
+    color: #DC143C;
+}
+
+.nav__img{
+    width: 150px;
+}
+
+/*----------END NAVBAR STYLES-----------*/
+
 
 .titulo{
     text-align: center;
