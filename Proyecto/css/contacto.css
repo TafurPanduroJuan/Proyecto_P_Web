@@ -61,3 +61,22 @@ body{
 /*----------END NAVBAR STYLES-----------*/
 
 
+
+
+/*--------------FOOTER SECTION----------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #1c1c1c;
+    color: #fff9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellphone span{
+    margin-right: 6px;
+}
+/*--------------END SECTION----------------*/
