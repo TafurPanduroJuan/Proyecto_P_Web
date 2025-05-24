@@ -60,6 +60,151 @@ body{
 
 /*----------END NAVBAR STYLES-----------*/
 
+/*----------MAIN SECTION-----------------*/
+/*Contenido*/
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Sobre la empresa*/
+.card0{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card0 h1{
+    color: brown;
+}
+
+.nosotros{
+    margin-left: 30px;
+}
+
+.card0 img{
+    width: 300px;
+    margin-right: 30px;
+}
+
+/*Nuestra Vision*/
+.intermedio{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.intermedio h1{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intermedio h1:hover{
+    color: brown;
+}
+
+/*Nuestra Vision*/
+.card1{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card1 h1{
+    color: brown;
+}
+
+.vision{
+    margin-left: 30px;
+}
+
+.card1 img{
+    width: 300px;
+    margin-right: 30px;
+}
+
+/*Nuestra Mision*/
+.card2{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card2 h1{
+    color: brown;
+}
+
+.t2{
+    color: white;
+}
+
+.mision{
+    margin-right: 30px;
+}
+
+.card2 img{
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+/*Nuestra Historia*/
+.card3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card3 h1{
+    color: brown;
+}
+
+.historia{
+    margin-left: 30px;
+}
+
+.card3 img{
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    /*Nosotros, Vision, Mision y historia*/
+    .card0,
+    .card1,
+    .card2,
+    .card3 {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .card0 img,
+    .card1 img,
+    .card2 img,
+    .card3 img {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .nosotros,
+    .vision,
+    .mision,
+    .historia {
+        margin: 0 auto;
+    }
+}
+/*-------------END MAIN SECTION---------------*/
 
 
 /*--------------FOOTER SECTION----------------*/
