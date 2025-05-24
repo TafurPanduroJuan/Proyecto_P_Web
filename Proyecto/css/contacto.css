@@ -59,7 +59,64 @@ body{
 }
 
 /*----------END NAVBAR STYLES-----------*/
-
+body {
+    background-color: #1e1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.contacto-container {
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 90vh;
+}
+.contacto-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.contacto-container p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.formulario {
+    max-width: 900px;
+    margin: auto;
+}
+.formulario input,
+.formulario textarea {
+    width: 48%;
+    padding: 20px;
+    margin: 20px 1%;
+    background-color: #2e2b2b;
+    border: 1px solid #666;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.formulario input[type="email"] {
+    width: 98%;
+}
+.formulario textarea {
+    width: 98%;
+    height: 180px;
+}
+.formulario button {
+    background-color: #ff2d2d;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #1e1b1b;
+}
 
 
 
