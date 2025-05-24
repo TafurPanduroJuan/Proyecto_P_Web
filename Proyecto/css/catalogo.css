@@ -74,7 +74,7 @@ body{
 .categorias a{
     margin: 0 15px;
     font-weight: bold;
-    color: white;
+    color: black;
     transition: color 0.5s ease;
 }
 .categorias a:hover{
