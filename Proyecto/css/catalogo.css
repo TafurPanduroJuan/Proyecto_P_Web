@@ -84,14 +84,15 @@ body{
 .contenido{
     display: flex;
     padding: 20px;
-    gap: 20px;   
+    gap: 20px;  
 }
+
+
 /*Filtros*/
 .filtros{
     width: 200px;
     padding: 10px;
-    background-color: white;
-    border-right: 1px solid black;
+    border-right: 2px solid #d1d1d1;
     color: black;
 }
 .filtros h3{
@@ -101,27 +102,37 @@ body{
     display: block;
     margin-bottom: 8px;
 }
+
+
 /*Productos*/
 .productos {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
-}
-.id-producto {
-    border: 1px solid grey;
-    border-radius: 10px;
-    width: 22%;
-    background-color: white;
-    text-align: center;
     padding: 10px;
+}
+
+
+
+
+.id-producto {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 16px;
     box-sizing: border-box;
-    transition: box-shadow 0.2s;
+    transition: transform 0.3s , box-shadow 0.2s;
 }
 
 .id-producto:hover {
-    box-shadow: 0 2px 5px black;
+    transform: scale(1.1);
+    box-shadow: 0 0px 10px #aaa;
 }
 
 .id-producto img {
@@ -136,6 +147,7 @@ body{
 }
 /*Carrito*/
 #carrito{
+    margin-top: 10px;
     background-color: red;
     color: white;
     border: none;
@@ -145,14 +157,16 @@ body{
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px black;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px #aaa;
 }
 
 #carrito:hover{
-    background-color: rgba(192, 3, 3, 0.699);
-    transform: scale(1.05);
+    background-color: rgba(192, 3, 3, 1.699);
+}
 
+.cart__section{
+    width: 200px;
 }
 
 

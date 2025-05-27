@@ -145,6 +145,7 @@ header{
 
 .info__container{
     max-width: 450px;
+    font-size: 20px;
 }
 /*--------------END SECTION----------------*/
 
@@ -199,6 +200,11 @@ header{
 .about__link:hover{
     transform: scale(1.2);
 
+}
+
+.about__link a {
+    text-decoration: none;
+    color: #fff;
 }
 /*--------------END SECTION----------------*/
 

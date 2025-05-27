@@ -5,13 +5,18 @@
 }
 
 body{
+    /*
+    background: linear-gradient(135deg,#DC143C 50%, #fff 50%) ;
+    */
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 /*----------NAVBAR STYLES-----------*/
 
 .navbar{
-    background-color: #000;
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -35,30 +40,115 @@ body{
 
 .link__item{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     margin: 0 20px;
+    font-size: 15px;
 }
 
 .link__item:hover{
     color: #DC143C;
 }
 
-.item__login{
-    background-color: #DC143C;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.item__login:hover{
-    background-color: #fff;
-    color: #DC143C;
-}
-
 .nav__img{
-    width: 150px;
+    width: 70px;
+
 }
 
 /*----------END NAVBAR STYLES-----------*/
+
+/*--------------HEADER SECTION----------------*/
+
+header{
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #ddd;
+    border: 1px solid #ddd;
+    width: 420px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+.form__container h1{
+    font-size: 36px;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.form{
+    display: flex;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+
+.form__username{
+    border-bottom: 2px solid #adadad;
+    margin: 36px 0;
+
+}
+
+.form__password{
+    border-bottom: 2px solid #adadad;
+    margin: 10px 0;
+}
+
+.form__input{
+    width: 100%;
+    height: 45px;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #000;
+    background-color: none;
+}
+
+input::placeholder{
+    color: #aaa;
+}
+
+
+.form__forgot{
+    margin: 20px 0;
+    font-size: 16px;
+    color: #000;
+
+}
+
+
+.form__button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 25px;
+    background-color: #DC143C;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.form__register{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+
+}
+
+
+
 
 
 
@@ -66,8 +156,8 @@ body{
 footer{
     width: 100%;
     height: 100px;
-    background-color: #1c1c1c;
-    color: #fff9;
+    background-color: transparent;
+    color: #1c1c1c;
     padding: 20px;
     display: flex;
     flex-direction: column;
