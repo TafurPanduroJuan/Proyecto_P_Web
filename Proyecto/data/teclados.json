@@ -1,0 +1,42 @@
+[
+  {
+    "nombre": "Teclado mecánico TE-4068G, retroiluminación rainbow, USB 2.0, español, color negro",
+    "precio": 129.00,
+    "imagen": "../imgs/catalogo_imgs/teclado1.jpg"
+  },
+  {
+    "nombre": "Teclado lavable TEROS TE-4065N, IPX7, USB, negro",
+    "precio": 79.00,
+    "imagen": "../imgs/catalogo_imgs/teclado2.jpg"
+  },
+  {
+    "nombre": "Teclado inalámbrico TEROS TE-4070S, 2.4 GHz, bluetooth 3.0 / 5.2, 80 teclas, blanco",
+    "precio": 109.00,
+    "imagen": "../imgs/catalogo_imgs/teclado3.jpg"
+  },
+  {
+    "nombre": "Teclado inalámbrico TEROS TE-4066G, multimedia, con iluminación RGB backlit",
+    "precio": 119.00,
+    "imagen": "../imgs/catalogo_imgs/teclado4.jpg"
+  },
+  {
+    "nombre": "Teclado inalámbrico TEROS TE-4064N, 2.4 GHz, bluetooth 3.0 / 5.2, 80 teclas, negro",
+    "precio": 105.00,
+    "imagen": "../imgs/catalogo_imgs/teclado5.jpg"
+  },
+  {
+    "nombre": "Teclado estándar TEROS TE-4067S, USB 2.0, negro",
+    "precio": 49.00,
+    "imagen": "../imgs/catalogo_imgs/teclado6.jpg"
+  },
+  {
+    "nombre": "Teclado estándar TE-4069S, multimedia, USB 2.0, español, color blanco",
+    "precio": 59.00,
+    "imagen": "../imgs/catalogo_imgs/teclado7.jpg"
+  },
+  {
+    "nombre": "Kit gamer TEROS TE-4063N, teclado multimedia, mouse, headset, mouse pad",
+    "precio": 149.00,
+    "imagen": "../imgs/catalogo_imgs/teclado8.jpg"
+  }
+]
