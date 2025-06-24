@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const res = await fetch(`../data/${categoria}.json`);
             const data = await res.json();
-            
-            // Extraer filtros disponibles de los productos
+
             const filtrosDisponibles = {};
-            
+
             data.forEach(producto => {
                 for (const [titulo, clave] of Object.entries(clavesFiltro)) {
                     if (producto[clave]) {
@@ -98,6 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             contenedor.appendChild(div);
         });
+
+        if (typeof window.inicializarBotonesCarrito === 'function') {
+            window.inicializarBotonesCarrito();
+        }
     }
 
     async function cargarCategoria(categoria) {
