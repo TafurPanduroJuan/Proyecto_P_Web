@@ -2,51 +2,81 @@
   {
     "nombre": "Audífono de conducción de aire TEROS TE-8078R, bluetooth, rojo / gris",
     "precio": 119.00,
-    "imagen": "../imgs/catalogo_imgs/auricular1.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular1.jpg",
+    "tipo": "Conducción ósea",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífono inalámbrico ANC TEROS TE-8033N (Headset), negro",
     "precio": 169.00,
-    "imagen": "../imgs/catalogo_imgs/auricular2.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular2.jpg",
+    "tipo": "Headset",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífono inalámbrico ANC TEROS TE-8033WP (Headset), blanco",
     "precio": 169.00,
-    "imagen": "../imgs/catalogo_imgs/auricular3.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular3.jpg",
+    "tipo": "Headset",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífono inalámbrico TEROS TE-8035N (Headset), negro",
     "precio": 149.00,
-    "imagen": "../imgs/catalogo_imgs/auricular4.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular4.jpg",
+    "tipo": "Headset",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífono TEROS TE-8037N (HEADSET), negro",
     "precio": 135.00,
-    "imagen": "../imgs/catalogo_imgs/auricular5.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular5.jpg",
+    "tipo": "Headset",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífonos de conducción ósea TEROS TE-8077N, bluetooth, negro",
     "precio": 149.00,
-    "imagen": "../imgs/catalogo_imgs/auricular6.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular6.jpg",
+    "tipo": "Conducción ósea",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífonos TEROS TE-80710N, Bluetooth, TWS, Negro",
     "precio": 99.00,
-    "imagen": "../imgs/catalogo_imgs/auricular7.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular7.jpg",
+    "tipo": "TWS",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Audífonos TEROS TE-8072N, Bluetooth, TWS, negro",
     "precio": 89.00,
-    "imagen": "../imgs/catalogo_imgs/auricular8.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular8.jpg",
+    "tipo": "TWS",
+    "conexion": "Bluetooth",
+    "luces": "Sin luces"
   },
   {
     "nombre": "Auriculares Gaming TEROS TE-8170N estéreo 7.1, micrófono, conector USB, Negro, Luces RGB",
     "precio": 139.00,
-    "imagen": "../imgs/catalogo_imgs/auricular9.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular9.jpg",
+    "tipo": "Headset",
+    "conexion": "USB",
+    "luces": "RGB"
   },
   {
     "nombre": "Auriculares gaming TEROS TE-8171N, estéreo, micrófono, luces RGB",
     "precio": 135.00,
-    "imagen": "../imgs/catalogo_imgs/auricular10.jpg"
+    "imagen": "../imgs/catalogo_imgs/auricular10.jpg",
+    "tipo": "Headset",
+    "conexion": "USB",
+    "luces": "RGB"
   }
 ]

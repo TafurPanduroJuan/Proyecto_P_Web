@@ -2,56 +2,100 @@
   {
     "nombre": "Monitor curvo gaming TEROS TE-2766G, 27″ FHD VA, 180 Hz",
     "precio": 399.00,
-    "imagen": "../imgs/catalogo_imgs/monitor1.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor1.jpg",
+    "pantalla": "27\"",
+    "resolucion": "Full HD",
+    "frecuencia": "180Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor curvo TEROS TE-3250S, 31.5″ 2K QHD VA, HDMI, DP",
     "precio": 499.00,
-    "imagen": "../imgs/catalogo_imgs/monitor2.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor2.jpg",
+    "pantalla": "31.5\"",
+    "resolucion": "2K",
+    "frecuencia": "60Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor curvo TEROS TE-2473G, 23.8″ FHD VA, HDMI, DP",
     "precio": 699.00,
-    "imagen": "../imgs/catalogo_imgs/monitor3.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor3.jpg",
+    "pantalla": "24\"",
+    "resolucion": "Full HD",
+    "frecuencia": "60Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor curvo TEROS TE-2401S, 23.8″ FHD VA, HDMI, VGA",
     "precio": 650.00,
-    "imagen": "../imgs/catalogo_imgs/monitor4.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor4.jpg",
+    "pantalla": "24\"",
+    "resolucion": "Full HD",
+    "frecuencia": "60Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor curvo gaming TEROS TE-2766G, 27″ FHD VA, 180 Hz",
     "precio": 699.00,
-    "imagen": "../imgs/catalogo_imgs/monitor5.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor5.jpg",
+    "pantalla": "27\"",
+    "resolucion": "Full HD",
+    "frecuencia": "180Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor curvo gaming TEROS TE-2471G, 23.8″ FHD VA, 165 Hz",
     "precio": 699.00,
-    "imagen": "../imgs/catalogo_imgs/monitor6.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor6.jpg",
+    "pantalla": "24\"",
+    "resolucion": "Full HD",
+    "frecuencia": "165Hz",
+    "panel": "VA"
   },
   {
     "nombre": "Monitor plano gaming TEROS TE-2474G, 24.5″ FHD IPS, 180Hz",
     "precio": 499.00,
-    "imagen": "../imgs/catalogo_imgs/monitor7.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor7.jpg",
+    "pantalla": "24\"",
+    "resolucion": "Full HD",
+    "frecuencia": "180Hz",
+    "panel": "IPS"
   },
   {
     "nombre": "Monitor plano gaming TEROS TE-2753G, 27″ 2K QHD IPS, 180 Hz",
     "precio": 799.00,
-    "imagen": "../imgs/catalogo_imgs/monitor8.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor8.jpg",
+    "pantalla": "27\"",
+    "resolucion": "2K",
+    "frecuencia": "180Hz",
+    "panel": "IPS"
   },
   {
     "nombre": "Monitor plano TEROS TE-2415S, 23.8″ FHD IPS, HDMI, DP",
     "precio": 599.00,
-    "imagen": "../imgs/catalogo_imgs/monitor9.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor9.jpg",
+    "pantalla": "24\"",
+    "resolucion": "Full HD",
+    "frecuencia": "60Hz",
+    "panel": "IPS"
   },
   {
     "nombre": "Monitor plano TEROS TE-2712S, 27″ FHD IPS, HDMI, VGA",
     "precio": 699.00,
-    "imagen": "../imgs/catalogo_imgs/monitor10.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor10.jpg",
+    "pantalla": "27\"",
+    "resolucion": "Full HD",
+    "frecuencia": "60Hz",
+    "panel": "IPS"
   },
   {
     "nombre": "Monitor plano TEROS TE-3252S, 31.5″ 4K UHD VA LED, 60 Hz",
     "precio": 753.00,
-    "imagen": "../imgs/catalogo_imgs/monitor11.jpg"
+    "imagen": "../imgs/catalogo_imgs/monitor11.jpg",
+    "pantalla": "31.5\"",
+    "resolucion": "4K",
+    "frecuencia": "60Hz",
+    "panel": "VA"
   }
 ]
