@@ -147,7 +147,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 const coincideGrupo = valoresSeleccionados.some(valor => {
-                    return String(prod[claveProd]) === String(valor);
+                    const prodValor = String(prod[claveProd]).trim().replace(/['"]/g, '');
+                    const filtroValor = String(valor).trim().replace(/['"]/g, '');
+                    return prodValor === filtroValor;
                 });
 
                 if (!coincideGrupo) {
