@@ -19,13 +19,16 @@
     <div class="contacto-container">
         <h1>CONTACTO</h1>
         <p>¡No dudes en contactarnos! Si tienes alguna pregunta, comentario o una propuesta de colaboración, nos encantaría saber de ti.</p>
-        <form class="formulario">
-            <input type="text" placeholder="NOMBRE">
-            <input type="text" placeholder="APELLIDO">
-            <input type="email" placeholder="EXAMPLE@GMAIL.COM">
-            <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <form class="formulario" id="formulario-contacto">
+            <input type="text" placeholder="NOMBRE" id="nombre">
+            <input type="text" placeholder="APELLIDO" id="apellido">
+            <input type="email" placeholder="EXAMPLE@GMAIL.COM" id="email">
+            <textarea placeholder="Escribe tu mensaje..." id="mensaje"></textarea>
             <br>
             <button type="submit">Enviar</button>
+            <p id="error-msg" style="color: red; display: none; text-align: center; margin-top: 10px;">
+                Por favor, completa todos los campos.
+            </p>
         </form>
     </div>
 
@@ -35,5 +38,24 @@
             require_once('templates/footer.php');
         ?>
     </footer>
+
+    <!--VALIDACIÓN DE FORMULARIO-->
+    <script>
+        document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+            const nombre = document.getElementById('nombre').value.trim();
+            const apellido = document.getElementById('apellido').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+            const errorMsg = document.getElementById('error-msg');
+
+            if (!nombre || !apellido || !email || !mensaje) {
+                e.preventDefault(); // Detiene el envío del formulario
+                errorMsg.style.display = 'block';
+            } else {
+                errorMsg.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
+
