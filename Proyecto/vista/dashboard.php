@@ -34,17 +34,17 @@ if(empty($_SESSION["id"])){
             <li>
                 <a href="#">
                     <i class='bxr  bx-chart-bar-big-columns'></i> 
-                    <span class="text">Analytics</span>
+                    <span class="text">Productos</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bxr  bx-envelope'></i> 
-                    <span class="text">Messages</span>
+                    <span class="text">Ventas</span>
                 </a>
             </li>
             <li>
-                <a href="../controlador/TeamController.php">
+                <a href="../vista/team.php">
                     <i class='bxr  bx-user-id-card'></i> 
 				    <span class="text">Team</span>
                 </a>
@@ -74,6 +74,34 @@ if(empty($_SESSION["id"])){
 				<span class="text">Admin</span>
 			</a>
 		</nav>
+
+
+         <main>
+            
+            <ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>1020</h3>
+						<p>Nuevas ordenes</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitantes</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Ventas Totales</p>
+					</span>
+				</li>
+			</ul>
+         </main>
     </section>
 
     
