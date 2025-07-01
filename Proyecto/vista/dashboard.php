@@ -44,7 +44,7 @@ if(empty($_SESSION["id"])){
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../controlador/TeamController.php">
                     <i class='bxr  bx-user-id-card'></i> 
 				    <span class="text">Team</span>
                 </a>
