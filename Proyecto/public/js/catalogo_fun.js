@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         contenedorFiltros.innerHTML = "<h3>Filtros</h3>";
 
         try {
-            const res = await fetch(`../data/${categoria}.json`);
+            const res = await fetch(`/Proyecto_P_Web/Proyecto/public/data/${categoria}.json`);
             const data = await res.json();
 
             const filtrosDisponibles = {};
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function cargarCategoria(categoria) {
         try {
-            const res = await fetch(`../data/${categoria}.json`);
+            const res = await fetch(`/Proyecto_P_Web/Proyecto/public/data/${categoria}.json`);
             const productos = await res.json();
 
             productosActuales = productos;

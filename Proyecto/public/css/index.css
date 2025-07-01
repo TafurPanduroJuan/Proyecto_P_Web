@@ -36,6 +36,7 @@ body{
 .link__item{
     text-decoration: none;
     color: #fff;
+    font-size: 17px;
     margin: 0 20px;
 }
 

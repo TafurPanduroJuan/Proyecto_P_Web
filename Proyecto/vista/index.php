@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEROS</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../imgs/inicio_imgs/favicon.ico">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
 </head>
 <body>
     <!--NAV SECTION-->
     <nav class="navbar">
-        <img class="nav__img" src="../imgs/inicio_imgs/logoTeros.png" alt="Error al cargar imagen">
-        <ul class="nav__list">
-            <li class="list__item"><a class="link__item" href="../html/index.html">Inicio</a></li>
-            <li class="list__item"><a class="link__item" href="../html/catalogo.html">Catalogo</a></li>
-            <li class="list__item"><a class="link__item" href="../html/nosotros.html">Nosotros</a></li>
-            <li class="list__item"><a class="link__item" href="../html/contacto.html">Contacto</a></li>
-            <li class="list__item"><a class="link__item item__login" href="../html/iniciarSesion.html">Iniciar Sesion</a></li>
-        </ul>
+        <?php
+            require_once('templates/navbar.php');
+        ?>
     </nav>
 
 
@@ -28,7 +23,7 @@
             <ul class="carrusel__list">
 
                 <li class="slider">
-                    <img src="../imgs/inicio_imgs/FONDO1.png" alt="">
+                    <img src="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/FONDO1.png" alt="">
                     <div class="text__container">
                        <h2>INNOVACION TECNOLOGICA</h2>
                        <P>Pantallas de alta definición y accesorios</P>
@@ -36,7 +31,7 @@
                 </li>
 
                 <li class="slider">
-                    <img src="../imgs/inicio_imgs/FONDO2.png" alt="">
+                    <img src="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/FONDO2.png" alt="">
                     <div class="text__container">
                        <h2>OFERTAS IMPERDIBLE</h2>
                        <P>Aprovecha descuentos exclusivos en nuestros productos.</P>
@@ -44,7 +39,7 @@
                 </li>
 
                 <li class="slider">
-                    <img src="../imgs/inicio_imgs/FONDO3.webp" alt="">
+                    <img src="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/FONDO3.webp" alt="">
                     <div class="text__container">
                        <h2>TU SETUP PERFECTO</h2>
                        <P>Equipos confiables y duraderos que elevan tu experiencia.</P>
@@ -67,18 +62,18 @@
         <div class="about__text">
             <h2>NOSOTROS</h2>
             <p>Teros, es una marca de origen peruano con expansio a Latinoamerica, dedicada a la comercializacion en China y personal peruano que tiene como mision garantizar la calidad de los productos</p>
-            <button class="about__link"><a href="../html/nosotros.html">Saber mas</a></button>
+            <button class="about__link"><a href="/Proyecto_P_Web/Proyecto/vista/nosotros.php">Saber mas</a></button>
         </div>
-        <img class="abouts__img" src="../imgs/inicio_imgs/iconoTeros.jpg" alt="">
+        <img class="abouts__img" src="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/iconoTeros.jpg" alt="">
     </section>
  
 
 
     <!--FOOTER SECTION-->
     <footer>
-        <div class="socialMedia">Twitter Youtube Tiktok</div>
-        <div class="cellphone"> <span class="material-symbols-outlined">call</span>999 777 666</div>
-        <div class="rights">@Copyright 2025</div>
+        <?php
+            require_once('templates/footer.php');
+        ?>
     </footer>
 </body>
 </html>

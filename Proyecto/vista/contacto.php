@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../imgs/inicio_imgs/favicon.ico">
+    <link rel="stylesheet" href="../public/css/contacto.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Proyecto_P_Web/Proyecto/public/imgs/inicio_imgs/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
 </head>
 <body>
     <!--NAV SECTION-->
     <nav class="navbar">
-        <img class="nav__img" src="../imgs/inicio_imgs/logoTeros.png" alt="Error al cargar imagen">
-        <ul class="nav__list">
-            <li class="list__item"><a class="link__item" href="../html/index.html">Inicio</a></li>
-            <li class="list__item"><a class="link__item" href="../html/catalogo.html">Catalogo</a></li>
-            <li class="list__item"><a class="link__item" href="../html/nosotros.html">Nosotros</a></li>
-            <li class="list__item"><a class="link__item" href="../html/contacto.html">Contacto</a></li>
-            <li class="list__item"><a class="link__item item__login" href="../html/iniciarSesion.html">Iniciar Sesion</a></li>
-        </ul>
+        <?php
+            require_once('templates/navbar.php');
+        ?>
     </nav>
 
     <div class="contacto-container">
@@ -36,9 +31,9 @@
 
     <!--FOOTER SECTION-->
     <footer>
-        <div class="socialMedia">Twitter Youtube Tiktok</div>
-        <div class="cellphone"> <span class="material-symbols-outlined">call</span>999 777 666</div>
-        <div class="rights">@Copyright 2025</div>
+        <?php
+            require_once('templates/footer.php');
+        ?>
     </footer>
 </body>
 </html>

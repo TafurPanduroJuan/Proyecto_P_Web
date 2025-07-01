@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(empty($_SESSION["id"])){
+    header("location:/Proyecto_P_Web/Proyecto/vista/login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +13,7 @@
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../public/css/dashboard.css">
     
 </head>
 <body>
@@ -46,7 +53,7 @@
 
         <ul class="side-menu">
             <li>
-                <a href="#">
+                <a href="../controlador/LogoutController.php">
                     <i class='bxr  bx-circle'></i> 
 				    <span class="text">Logout</span>
                 </a>

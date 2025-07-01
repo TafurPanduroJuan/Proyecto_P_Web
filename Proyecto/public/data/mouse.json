@@ -2,7 +2,7 @@
   {
     "nombre": "Mouse gamer TEROS TE-1210G, 7 botones, RGB, negro",
     "precio": 69.00,
-    "imagen": "../imgs/catalogo_imgs/mouse1.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse1.jpg",
     "tipo": "Gamer",
     "dpi": "6400",
     "conexion": "USB"
@@ -10,7 +10,7 @@
   {
     "nombre": "Mouse gamer TEROS TE-1211G, 7 botones, RGB, negro",
     "precio": 69.00,
-    "imagen": "../imgs/catalogo_imgs/mouse2.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse2.jpg",
     "tipo": "Gamer",
     "dpi": "6400",
     "conexion": "USB"
@@ -18,7 +18,7 @@
   {
     "nombre": "Mouse gamer TEROS TE-1216G, 2 botones, RGB, transparente",
     "precio": 59.00,
-    "imagen": "../imgs/catalogo_imgs/mouse3.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse3.jpg",
     "tipo": "Gamer",
     "dpi": "3200",
     "conexion": "USB"
@@ -26,7 +26,7 @@
   {
     "nombre": "Mouse óptico gamer TEROS TE-5167N, 8 botones, 12800 DPI, RGB, negro",
     "precio": 89.00,
-    "imagen": "../imgs/catalogo_imgs/mouse4.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse4.jpg",
     "tipo": "Gamer",
     "dpi": "12800",
     "conexion": "USB"
@@ -34,7 +34,7 @@
   {
     "nombre": "Mouse óptico gamer TEROS TE-5168N, 7 botones, 6400 DPI, RGB, negro",
     "precio": 79.00,
-    "imagen": "../imgs/catalogo_imgs/mouse5.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse5.jpg",
     "tipo": "Gamer",
     "dpi": "6400",
     "conexion": "USB"
@@ -42,7 +42,7 @@
   {
     "nombre": "Mouse óptico inalámbrico TEROS TE-1214S, 1000 DPI, receptor USB, 3 botones",
     "precio": 39.00,
-    "imagen": "../imgs/catalogo_imgs/mouse6.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse6.jpg",
     "tipo": "Inalámbrico",
     "dpi": "1000",
     "conexion": "2.4GHz"
@@ -50,7 +50,7 @@
   {
     "nombre": "Mouse óptico inalámbrico TEROS TE-1215S, 1000 DPI, receptor USB, 3 botones",
     "precio": 39.00,
-    "imagen": "../imgs/catalogo_imgs/mouse7.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse7.jpg",
     "tipo": "Inalámbrico",
     "dpi": "1000",
     "conexion": "2.4GHz"
@@ -58,7 +58,7 @@
   {
     "nombre": "Mouse óptico inalámbrico TEROS TE-1217S, 1000 DPI, receptor USB, 3 botones",
     "precio": 39.00,
-    "imagen": "../imgs/catalogo_imgs/mouse8.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse8.jpg",
     "tipo": "Inalámbrico",
     "dpi": "1000",
     "conexion": "2.4GHz"
@@ -66,7 +66,7 @@
   {
     "nombre": "Mouse óptico inalámbrico TEROS TE-1218S, 1000 DPI, receptor USB, 3 botones",
     "precio": 39.00,
-    "imagen": "../imgs/catalogo_imgs/mouse9.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse9.jpg",
     "tipo": "Inalámbrico",
     "dpi": "1000",
     "conexion": "2.4GHz"
@@ -74,7 +74,7 @@
   {
     "nombre": "Mouse óptico inalámbrico TEROS TE-1219S, 1000 DPI, receptor USB, 3 botones, color morado",
     "precio": 39.00,
-    "imagen": "../imgs/catalogo_imgs/mouse10.jpg",
+    "imagen": "/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/mouse10.jpg",
     "tipo": "Inalámbrico",
     "dpi": "1000",
     "conexion": "2.4GHz"

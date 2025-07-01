@@ -42,7 +42,7 @@ body{
     text-decoration: none;
     color: #000;
     margin: 0 20px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .link__item:hover{
@@ -97,9 +97,15 @@ header{
 
 }
 
+.form__email{
+    border-bottom: 2px solid #adadad;
+    margin: 36px 0;
+
+}
+
 .form__password{
     border-bottom: 2px solid #adadad;
-    margin: 10px 0;
+    margin: 36px 0;
 }
 
 .form__input{
@@ -118,12 +124,7 @@ input::placeholder{
 }
 
 
-.form__forgot{
-    margin: 20px 0;
-    font-size: 16px;
-    color: #000;
 
-}
 
 
 .form__button{
@@ -138,14 +139,6 @@ input::placeholder{
     font-size: 16px;
 }
 
-
-.form__register{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-
-}
 
 
 
