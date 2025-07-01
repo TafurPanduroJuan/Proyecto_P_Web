@@ -21,7 +21,7 @@ if(empty($_SESSION["id"])){
 	<section id="sidebar">
 
         <a href="#" class="brand">
-			<span class="text">Home</span>
+			<span class="text">ADMIN PANEL</span>
         </a>
         
         <ul class="side-menu top">
