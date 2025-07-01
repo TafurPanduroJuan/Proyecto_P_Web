@@ -151,6 +151,16 @@ body{background-color: #F4F4F4;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(211, 244, 255);
+    	color: skyblue;
+}
+#content main .box-info li:nth-child(2) .bx{
+    background-color:lightyellow;
+    color: yellow;
+}
+#content main .box-info li:last-child .bx{
+    background-color:rgb(255, 201, 201);
+    color: rgb(247, 127, 83);
 }
 
 
