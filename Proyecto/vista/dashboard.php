@@ -41,7 +41,7 @@ if(empty($_SESSION["id"])){
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../vista/team.php">
                     <i class='bxr  bx-user-id-card'></i> 
 				    <span class="text">Equipo</span>
                 </a>
@@ -50,7 +50,7 @@ if(empty($_SESSION["id"])){
 
         <ul class="sidebar sidebar__bottom">
             <li>
-                <a href="#">
+                <a href="../controlador/LogoutController.php">
                     <i class='bxr  bx-circle'></i> 
 				    <span class="text">Cerrar Sesion</span>
                 </a>
