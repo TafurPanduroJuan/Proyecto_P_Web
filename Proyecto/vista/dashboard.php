@@ -17,14 +17,11 @@ if(empty($_SESSION["id"])){
     
 </head>
 <body>
-<!-- SIDEBAR -->
-	<section id="sidebar">
+    <section id="sidebar">
 
-        <a href="#" class="brand">
-			<span class="text">ADMIN PANEL</span>
-        </a>
-        
-        <ul class="side-menu top">
+        <span class="brand">Panel Administrador</span>
+
+        <ul class="sidebar sidebar__top">
             <li>
                 <a href="#">
                     <i class='bxr bx-home'></i>
@@ -44,26 +41,25 @@ if(empty($_SESSION["id"])){
                 </a>
             </li>
             <li>
-                <a href="../vista/team.php">
+                <a href="#">
                     <i class='bxr  bx-user-id-card'></i> 
-				    <span class="text">Team</span>
+				    <span class="text">Equipo</span>
                 </a>
             </li>
         </ul>
 
-        <ul class="side-menu">
+        <ul class="sidebar sidebar__bottom">
             <li>
-                <a href="../controlador/LogoutController.php">
+                <a href="#">
                     <i class='bxr  bx-circle'></i> 
-				    <span class="text">Logout</span>
+				    <span class="text">Cerrar Sesion</span>
                 </a>
             </li>
         </ul>
-	</section>
-
+    </section>
 
     <section id="content">
-		<nav>
+        <nav>
 			<a href="#" class="notification">
 				<i class='bx bxs-bell'></i>
 				<span class="num">8</span>
@@ -75,36 +71,96 @@ if(empty($_SESSION["id"])){
 			</a>
 		</nav>
 
-
-         <main>
-            
-            <ul class="box-info">
+        <main>
+             <ul class="box-info">
 				<li>
 					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
+					<div class="text">
 						<h3>1020</h3>
 						<p>Nuevas ordenes</p>
-					</span>
+                    </div>
 				</li>
 				<li>
 					<i class='bx bxs-group' ></i>
-					<span class="text">
+					<div class="text">
 						<h3>2834</h3>
 						<p>Visitantes</p>
-					</span>
+                    </div>
 				</li>
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
+					<div class="text">
 						<h3>$2543</h3>
 						<p>Ventas Totales</p>
-					</span>
+                    </div>
 				</li>
 			</ul>
-         </main>
-    </section>
 
-    
-    <script src="../js/dashboard.js"></script>
+           <div class="main__dashboard">
+                <div class="customers">
+                    <h3>Ultimas Ventas</h3>
+                    <div class="table__customer">
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>Usuario</th>
+                                        <th>Fecha</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Fabrizio Medina</p>
+                                    </td>
+                                    <td>12-07-2025</td>
+                                    <td><span class="status completed">Completado</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Juan Miguel</p>
+                                    </td>
+                                    <td>12-07-2025</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Juan Ocsa</p>
+                                    </td>
+                                    <td>12-07-2025</td>
+                                    <td><span class="status process">En Proceso</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Hilario Ccucho</p>
+                                    </td>
+                                    <td>12-07-2025</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Jeshua Yola</p>
+                                    </td>
+                                    <td>12-07-2025</td>
+                                    <td><span class="status completed">Completado</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="task__module">
+                    <form id="formulario">
+                        <H3>Tareas</H3>
+                        <input type="text" id="task" name="task" placeholder="Nombre de tarea..." required autocomplete="off">
+                        <button type="submit">Agregar</button>
+                    </form>
+                    <div class="task_container"></div>
+                </div>
+           </div>
+        </main>
+    </section>    
+    <script src="../public/js/DashboarTask.js"></script>
 </body>
 </html>
