@@ -92,7 +92,7 @@
           <input class="form-control mb-2" name="email" type="email" placeholder="Email" required>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal" name="btnCancelar">Cancelar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
           <button type="submit" class="btn btn-success" name="btnGuardar" value="ok">Guardar</button>
         </div>
       </form>
