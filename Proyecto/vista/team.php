@@ -11,6 +11,13 @@
 </head>
 
 <body>
+  <div class="d-flex justify-content-end mb-3">
+    <a href="../vista/dashboard.php"
+      class="btn btn-danger d-flex align-items-center justify-content-center gap-2 px-3 py-2 rounded shadow-sm mx-5 mt-4">
+      <span class="material-symbols-outlined">arrow_back</span>
+      <span>Volver</span>
+    </a>
+  </div>
 
   <!-- Tu contenido -->
   <div class="container mt-4">

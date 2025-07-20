@@ -15,4 +15,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-console.log("Botón editar detectado:", this.dataset);
