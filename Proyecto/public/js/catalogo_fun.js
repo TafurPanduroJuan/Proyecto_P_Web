@@ -20,16 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
         "Iluminación": "iluminacion"
     };
 
-    async function cargarFiltros(categoria) {
-        contenedorFiltros.innerHTML = "<h3>Filtros</h3>";
+    async function cargarFiltros(productos) {
+        contenedorFiltros.innerHTML = "";
+
+        const tituloFiltros = document.createElement("h3");
+        tituloFiltros.textContent = "Filtros";
+        contenedorFiltros.appendChild(tituloFiltros);
 
         try {
-            const res = await fetch(`/Proyecto_P_Web/Proyecto/public/data/${categoria}.json`);
-            const data = await res.json();
-
             const filtrosDisponibles = {};
 
-            data.forEach(producto => {
+            productos.forEach(producto => {
                 for (const [titulo, clave] of Object.entries(clavesFiltro)) {
                     if (producto[clave]) {
                         if (!filtrosDisponibles[titulo]) {
@@ -49,9 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 valores.forEach(valor => {
                     const label = document.createElement("label");
-                    label.innerHTML = `
-                        <input type="checkbox" data-filtro-grupo="${titulo}" value="${valor}"> ${valor}
-                    `;
+                    const input = document.createElement("input");
+                    input.type = "checkbox";
+                    input.setAttribute("data-filtro-grupo", titulo);
+                    input.value = valor;
+
+                    label.appendChild(input);
+                    label.append(` ${valor}`);
                     contenedorFiltros.appendChild(label);
                 });
             }
@@ -111,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
             productosActuales = productos;
             categoriaActual = categoria;
 
-            await cargarFiltros(categoria);
+            await cargarFiltros(productos);
             mostrarProductos(productos);
         } catch (error) {
             contenedor.innerHTML = "<p>Error al cargar productos de esta categoría.</p>";

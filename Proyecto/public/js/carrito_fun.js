@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const cartTrigger = document.getElementById('cart-trigger');
     const closeCart = document.querySelector('.close-cart');
     const cartItemsContainer = document.getElementById('cart-items');
-    const checkoutBtn = document.querySelector('.checkout-btn');
 
     let cartItems = JSON.parse(localStorage.getItem('terosCart')) || [];
 
@@ -121,14 +120,12 @@ document.addEventListener('DOMContentLoaded', function () {
     cart.addEventListener('mouseleave', () => cart.style.right = '-400px');
     closeCart.addEventListener('click', () => cart.style.right = '-400px');
 
-    checkoutBtn.addEventListener('click', function () {
-        alert('¡Gracias por tu compra! Total: ' + document.querySelector('.total-price').textContent);
-        cartItems = [];
-        renderCartItems();
-    });
 
     renderCartItems();
 
-    // Exponer función global para usar desde catalogo_fun.js
     window.inicializarBotonesCarrito = inicializarBotonesCarrito;
+    // Exponer cartItems y renderCartItems para que pago_fun.js pueda acceder a ellos
+    window.getCartItems = () => cartItems;
+    window.setCartItems = (newItems) => { cartItems = newItems; renderCartItems(); };
+    window.renderCartItemsGlobal = renderCartItems; // Exponer para que pago_fun.js pueda llamarla
 });
