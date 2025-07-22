@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once '../config/conexion.php'; // Asegúrate de que la ruta sea correcta
+require_once '../config/conexion.php';
 
 $action = $_GET['action'] ?? '';
 
@@ -23,7 +23,7 @@ function getCategorias($conexion) {
 function getProductoConEspecificaciones($conexion, $producto_id, $categoria_id) {
     $producto = [];
     // Obtener datos generales del producto
-    $stmt = $conexion->prepare("SELECT p.id, p.nombre, p.precio, p.imagen, c.nombre as categoria_nombre FROM productos p JOIN categorias c ON p.categoria_id = c.id WHERE p.id = ?");
+    $stmt = $conexion->prepare("SELECT p.id, p.nombre, p.precio, p.imagen, c.nombre as categoria_nombre, c.id as categoria_id FROM productos p JOIN categorias c ON p.categoria_id = c.id WHERE p.id = ?");
     $stmt->bind_param("i", $producto_id);
     $stmt->execute();
     $resultado = $stmt->get_result();
@@ -62,42 +62,42 @@ function getProductoConEspecificaciones($conexion, $producto_id, $categoria_id) 
     return $producto;
 }
 
-// Lógica para listar productos (incluyendo categoría)
+// Lógica para listar productos (incluyendo categoría y todas las especificaciones)
 if ($action === 'list') {
     $productos = [];
     $sql = "SELECT p.id, p.nombre, p.precio, p.imagen, c.nombre as categoria_nombre, c.id as categoria_id FROM productos p JOIN categorias c ON p.categoria_id = c.id";
     $resultado = $conexion->query($sql);
     if ($resultado) {
         while ($fila = $resultado->fetch_assoc()) {
-            $productos[] = $fila;
+            // Para cada producto, obtener sus especificaciones completas
+            $producto_completo = getProductoConEspecificaciones($conexion, $fila['id'], $fila['categoria_id']);
+            if ($producto_completo) {
+                $productos[] = $producto_completo;
+            }
         }
     }
     echo json_encode($productos);
 }
 
-// Lógica para insertar/actualizar productos
+// Lógica para insertar/actualizar productos (mantener como está)
 elseif ($action === 'insert' || $action === 'update') {
     $id = $_POST['id'] ?? null;
     $nombre = $_POST['nombre'];
     $precio = $_POST['precio'];
     $categoria_id = $_POST['categoria'];
-    $imagen = $_POST['imagen'] ?? ''; // Asume que la imagen se maneja como una URL o ruta
+    $imagen = $_POST['imagen'] ?? '';
 
-    // Manejo de la imagen (simplificado para el ejemplo)
-    // En un entorno real, deberías subir el archivo y guardar su ruta.
     if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
-        $uploadDir = '../public/imgs/catalogo_imgs/'; // Directorio donde guardar las imágenes
+        $uploadDir = '../public/imgs/catalogo_imgs/';
         $imageFileName = basename($_FILES['imagen']['name']);
         $imagePath = $uploadDir . $imageFileName;
         if (move_uploaded_file($_FILES['imagen']['tmp_name'], $imagePath)) {
             $imagen = '/Proyecto_P_Web/Proyecto/public/imgs/catalogo_imgs/' . $imageFileName;
         } else {
-            // Manejar error de subida
             echo "Error al subir la imagen.";
             exit;
         }
     } elseif ($action === 'update' && empty($imagen)) {
-        // Si es una actualización y no se sube nueva imagen, mantener la existente
         $stmt_old_img = $conexion->prepare("SELECT imagen FROM productos WHERE id = ?");
         $stmt_old_img->bind_param("i", $id);
         $stmt_old_img->execute();
@@ -120,12 +120,11 @@ elseif ($action === 'insert' || $action === 'update') {
     }
 
     if ($success) {
-        // Insertar/Actualizar especificaciones
         $especificaciones_success = true;
         switch ($categoria_id) {
             case 1: // Audífonos
                 $tipo = $_POST['tipo'] ?? null;
-                $conexion_esp = $_POST['conexion_esp'] ?? null; // Renombrado para evitar conflicto con la conexión de la DB
+                $conexion_esp = $_POST['conexion_esp'] ?? null;
                 $luces = $_POST['luces'] ?? null;
                 if ($action === 'insert') {
                     $stmt_esp = $conexion->prepare("INSERT INTO audifonos (producto_id, tipo, conexion, luces) VALUES (?, ?, ?, ?)");
@@ -189,10 +188,9 @@ elseif ($action === 'insert' || $action === 'update') {
     }
 }
 
-// Lógica para eliminar productos
+// Lógica para eliminar productos (mantener como está)
 elseif ($action === 'delete') {
     $id = $_POST['id'];
-    // Primero eliminar de las tablas de especificaciones (si existen)
     $stmt_cat = $conexion->prepare("SELECT categoria_id FROM productos WHERE id = ?");
     $stmt_cat->bind_param("i", $id);
     $stmt_cat->execute();
@@ -207,7 +205,6 @@ elseif ($action === 'delete') {
         }
     }
 
-    // Luego eliminar de la tabla principal de productos
     $stmt = $conexion->prepare("DELETE FROM productos WHERE id = ?");
     $stmt->bind_param("i", $id);
     if ($stmt->execute()) {
