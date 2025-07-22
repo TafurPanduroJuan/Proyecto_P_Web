@@ -29,7 +29,7 @@ if(empty($_SESSION["id"])){
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../vista/productos.php">
                     <i class='bxr  bx-chart-bar-big-columns'></i> 
                     <span class="text">Productos</span>
                 </a>
