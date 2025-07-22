@@ -113,15 +113,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 350px;
+    height: 550px;
 }
 
 .card1 h1{
     color: brown;
+    font-size: 2.5rem;
 }
 
 .vision{
     margin-left: 30px;
+    font-size: 1.25rem;
 }
 
 .card1 img{
@@ -135,11 +137,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 350px;
+    height: 550px;
 }
 
 .card2 h1{
     color: brown;
+    font-size: 2.5rem;
 }
 
 .t2{
@@ -148,6 +151,7 @@ main{
 
 .mision{
     margin-right: 30px;
+    font-size: 1.25rem;
 }
 
 .card2 img{
@@ -162,15 +166,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 350px;
+    height: 550px;
 }
 
 .card3 h1{
     color: brown;
+    font-size: 2.5rem;
 }
 
 .historia{
     margin-left: 30px;
+    font-size: 1.25rem;
 }
 
 .card3 img{

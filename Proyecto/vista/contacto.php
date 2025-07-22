@@ -20,8 +20,10 @@
         <h1>CONTACTO</h1>
         <p>¡No dudes en contactarnos! Si tienes alguna pregunta, comentario o una propuesta de colaboración, nos encantaría saber de ti.</p>
         <form class="formulario" id="formulario-contacto">
-            <input type="text" placeholder="NOMBRE" id="nombre">
-            <input type="text" placeholder="APELLIDO" id="apellido">
+            <div class="form-row">
+                <input type="text" placeholder="NOMBRE" id="nombre">
+                <input type="text" placeholder="APELLIDO" id="apellido">
+            </div>
             <input type="email" placeholder="EXAMPLE@GMAIL.COM" id="email">
             <textarea placeholder="Escribe tu mensaje..." id="mensaje"></textarea>
             <br>
